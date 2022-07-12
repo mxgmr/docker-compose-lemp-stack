@@ -31,3 +31,8 @@ services:
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?err}
         volumes:
             - ${PWD}
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
